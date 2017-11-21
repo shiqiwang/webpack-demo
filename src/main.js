@@ -1,11 +1,10 @@
 import Vue from 'vue'
-import Demo from './components/demo'
+import Hello from './components/hello.vue'
 
 new Vue({
-  el: '#demo',
-  router,
-  template: '<Demo/>',
+  el: '#app',
+  template: '<div><hello></hello></div>',
   components: {
-    Demo,
-  },
+    Hello
+  }
 });
