@@ -1,10 +1,24 @@
 <template>
-  <div><hello></hello></div>
+  <div class="home">
+    <hello></hello>
+  </div>
 </template>
 
 <script>
-  import Hello from 'components/hello'
-  export default {
-    components: {Hello}
+import hello from '../components/hello.vue'
+export default {
+  components: {
+    hello
   }
+}
 </script>
+
+<style scoped>
+  .home {
+    background: #ccc;
+    height: 100px;
+    width: 300px;
+  }
+</style>
+
+
