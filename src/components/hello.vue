@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">{{message}}</div>
+  <div class="hello">{{home.hello}}</div>
 </template>
 
 <script>
   export default {
-    data () {
-      return {
-        message: 'hello component'
+    computed: {
+      home () {
+        return this.$store.getters.home
       }
     }
   }
